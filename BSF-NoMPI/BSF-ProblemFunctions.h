@@ -1,6 +1,6 @@
 /*==============================================================================
-Project: BSF
-Theme: BSF Skeleton
+Project: LiFe
+Theme: Apex Method (No MPI)
 Module: BSF-ProblemFunctions.h (Predefined Problem Function Forwards)
 Author: Leonid B. Sokolinsky
 This source code is a part of BSF Skeleton (https://github.com/leonid-sokolinsky/BSF-skeleton)
@@ -51,7 +51,7 @@ void PC_bsf_JobDispatcher(
 	bool* exit,
 	double t
 );
-//
+void PC_bsf_MainArguments(int argc, char* argv[]);
 void PC_bsf_MapF(
 	PT_bsf_mapElem_T* mapElem, 
 	PT_bsf_reduceElem_T* reduceElem, 
@@ -76,8 +76,8 @@ void PC_bsf_ParametersOutput(
 	PT_bsf_parameter_T parameter
 );
 void PC_bsf_ProblemOutput(
-	PT_bsf_reduceElem_T* reduceResult,
-	int reduceCounter,
+	PT_bsf_reduceElem_T* reduceResult, 
+	int reduceCounter, 
 	PT_bsf_parameter_T parameter,
 	double t
 );

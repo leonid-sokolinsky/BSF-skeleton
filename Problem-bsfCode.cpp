@@ -13,6 +13,9 @@ This source code is a part of BSF Skeleton (https://github.com/leonid-sokolinsky
 using namespace std;
 
 //----------------------- Predefined problem-dependent functions -----------------
+void PC_bsf_SetInitParameter(PT_bsf_parameter_T* parameter) {
+}
+
 void PC_bsf_Init(bool* success) {
 
 }
@@ -21,8 +24,12 @@ void PC_bsf_SetListSize(int* listSize) {
 
 }
 
-void PC_bsf_CopyParameter(PT_bsf_parameter_T parameterIn, PT_bsf_parameter_T* parameterOutP) {
+void PC_bsf_SetMapListElem(PT_bsf_mapElem_T* elem, int i) {
 
+}
+
+void PC_bsf_MapInit(PT_bsf_parameter_T parameter) {
+	// Optional filling. Do not delete!
 }
 
 void PC_bsf_MapF(PT_bsf_mapElem_T* mapElem, PT_bsf_reduceElem_T* reduceElem, int* success) {	// For Job 0
@@ -59,48 +66,49 @@ void PC_bsf_ReduceF_3(PT_bsf_reduceElem_T_3* x, PT_bsf_reduceElem_T_3* y, PT_bsf
 
 void PC_bsf_ProcessResults(		// For Job 0
 	PT_bsf_reduceElem_T* reduceResult,
-	int reduceCounter, 
-	PT_bsf_parameter_T* parameter, 
+	int reduceCounter, // Number of successfully produced Elements of Reduce List
+	PT_bsf_parameter_T* parameter, // Current Approximation
 	int* nextJob,
-	bool* exit 
+	bool* exit // "true" if Stopping Criterion is satisfied, and "false" otherwise
 ) {
 
 }
 
 void PC_bsf_ProcessResults_1(	// For Job 1	
 	PT_bsf_reduceElem_T_1* reduceResult,
-	int reduceCounter, 
-	PT_bsf_parameter_T* parameter, 
+	int reduceCounter, // Number of successfully produced Elements of Reduce List
+	PT_bsf_parameter_T* parameter, // Current Approximation
 	int* nextJob,
-	bool* exit 
+	bool* exit // "true" if Stopping Criterion is satisfied, and "false" otherwise
 ) {
 	// Optional filling. Do not delete!
 }
 
 void PC_bsf_ProcessResults_2(	// For Job 2
 	PT_bsf_reduceElem_T_2* reduceResult,
-	int reduceCounter, 
-	PT_bsf_parameter_T* parameter, 
+	int reduceCounter, // Number of successfully produced Elements of Reduce List
+	PT_bsf_parameter_T* parameter, // Current Approximation
 	int* nextJob,
-	bool* exit 
-	) {
+	bool* exit // "true" if Stopping Criterion is satisfied, and "false" otherwise
+) {
 	// Optional filling. Do not delete!
 }
 
 void PC_bsf_ProcessResults_3(	// For Job 3
 	PT_bsf_reduceElem_T_3* reduceResult,
-	int reduceCounter, 
-	PT_bsf_parameter_T* parameter, 
+	int reduceCounter, // Number of successfully produced Elements of Reduce List
+	PT_bsf_parameter_T* parameter, // Current Approximation
 	int* nextJob,
-	bool* exit 
-	) {
+	bool* exit // "true" if Stopping Criterion is satisfied, and "false" otherwise
+) {
 	// Optional filling. Do not delete!
 }
 
 void PC_bsf_JobDispatcher(
 	PT_bsf_parameter_T* parameter, // Current Approximation
 	int* job,
-	bool* exit
+	bool* exit,
+	double t
 ) {
 	// Optional filling. Do not delete!
 }
@@ -120,29 +128,32 @@ void PC_bsf_ParametersOutput(PT_bsf_parameter_T parameter) {
 
 }
 
-void PC_bsf_IterOutput(PT_bsf_reduceElem_T* reduceResult, int reduceCounter, PT_bsf_parameter_T parameter,
-	double elapsedTime, int jobCase) {	// For Job 0
-	cout << "------------------ " << BSF_sv_iterCounter << " ------------------" << endl;
+void PC_bsf_CopyParameter(PT_bsf_parameter_T parameterIn, PT_bsf_parameter_T* parameterOutP) {
 
+}
+
+void PC_bsf_IterOutput(PT_bsf_reduceElem_T* reduceResult, int reduceCounter, PT_bsf_parameter_T parameter,
+	double elapsedTime, int nextJob) {	// For Job 0
+	cout << "------------------ " << BSF_sv_iterCounter << " ------------------" << endl;
 
 }
 
 void PC_bsf_IterOutput_1(PT_bsf_reduceElem_T_1* reduceResult, int reduceCounter, PT_bsf_parameter_T parameter,
-	double elapsedTime, int jobCase) {	// For Job 1
+	double elapsedTime, int nextJob) {	// For Job 1
 	cout << "------------------ " << BSF_sv_iterCounter << " ------------------" << endl;
 	// Optional filling. Do not delete!
 
 }
 
 void PC_bsf_IterOutput_2(PT_bsf_reduceElem_T_2* reduceResult, int reduceCounter, PT_bsf_parameter_T parameter,
-	double elapsedTime, int jobCase) {	// For Job 2
+	double elapsedTime, int nextJob) {	// For Job 2
 	cout << "------------------ " << BSF_sv_iterCounter << " ------------------" << endl;
 	// Optional filling. Do not delete!
 
 }
 
 void PC_bsf_IterOutput_3(PT_bsf_reduceElem_T_3* reduceResult, int reduceCounter, PT_bsf_parameter_T parameter,
-	double elapsedTime, int jobCase) {	// For Job 3
+	double elapsedTime, int nextJob) {	// For Job 3
 	cout << "------------------ " << BSF_sv_iterCounter << " ------------------" << endl;
 	// Optional filling. Do not delete!
 
@@ -166,14 +177,6 @@ void PC_bsf_ProblemOutput_2(PT_bsf_reduceElem_T_2* reduceResult, int reduceCount
 void PC_bsf_ProblemOutput_3(PT_bsf_reduceElem_T_3* reduceResult, int reduceCounter, PT_bsf_parameter_T parameter,
 	double t) {	// For Job 3
 	// Optional filling. Do not delete!
-}
-
-void PC_bsf_SetInitParameter(PT_bsf_parameter_T* parameter) {
-
-}
-
-void PC_bsf_SetMapListElem(PT_bsf_mapElem_T* elem, int i) {
-
 }
 
 //----------------------- Assigning Values to BSF-skeleton Variables (Do not modify!) -----------------------

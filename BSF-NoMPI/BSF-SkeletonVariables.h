@@ -1,6 +1,6 @@
 /*==============================================================================
-Project: BSF
-Theme: BSF Skeleton
+Project: LiFe
+Theme: Apex Method (No MPI)
 Module: BSF-SceletonVariables.h (Skeleton Variables)
 Prefix: BSF_sv
 Author: Leonid B. Sokolinsky

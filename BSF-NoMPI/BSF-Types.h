@@ -1,13 +1,13 @@
 /*==============================================================================
-Project: BSF
-Theme: BSF Skeleton
+Project: LiFe
+Theme: Apex Method (No MPI)
 Module: BSF-Types.h (Problem Independent Types)
 Prefix: BT
 Author: Leonid B. Sokolinsky 
-This source code is a part of BSF Skeleton (https://github.com/leonid-sokolinsky/BSF-skeleton)
+This source code is a part of BSF Skeleton
 ==============================================================================*/
 #pragma once
-#include "Problem-bsfTypes.h"	// Predefined BSF Problem Types
+#include "Problem-bsfTypes.h"	// Predefined Problem Types
 //=========================== BSF Types ===============================
 struct BT_order_T {
 	char exit;		// true, if worker must stop
@@ -35,3 +35,4 @@ struct BT_extendedReduceElem_T_3 {// Extended element type of reduce list
 	PT_bsf_reduceElem_T_3 elem;	// Element of reduce list
 	int reduceCounter;			// Reduce Counter
 };
+
