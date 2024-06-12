@@ -1,6 +1,6 @@
 /*==============================================================================
 Project: LiFe
-Theme: Apex Method (No MPI)
+Theme: BSF Skeleton
 Module: BSF-Code.cpp (Problem Independent Code)
 Prefix: BC
 Author: Leonid B. Sokolinsky

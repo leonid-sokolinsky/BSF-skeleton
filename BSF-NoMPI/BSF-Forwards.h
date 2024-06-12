@@ -1,6 +1,6 @@
 /*==============================================================================
 Project: LiFe
-Theme: Apex Method (No MPI)
+Theme: BSF Skeleton
 Module: BSF-Forwards.h (Problem Independent Function Forwards)
 Author: Leonid B. Sokolinsky 
 This source code is a part of BSF Skeleton (https://github.com/leonid-sokolinsky/BSF-skeleton)

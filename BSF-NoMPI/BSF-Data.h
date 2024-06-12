@@ -1,6 +1,6 @@
 /*==============================================================================
 Project: LiFe
-Theme: Apex Method (No MPI)
+Theme: BSF Skeleton
 Module: BSF-Data.h (Problem Independent Variables & Data Structures)
 Prefix: BD
 Author: Leonid B. Sokolinsky 
