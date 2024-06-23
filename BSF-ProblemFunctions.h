@@ -1,5 +1,5 @@
 /*==============================================================================
-Project: BSF
+Project: BSF (Bulk Synchronous Farm) parallel computation model
 Theme: BSF Skeleton
 Module: BSF-ProblemFunctions.h (Predefined Problem Function Forwards)
 Author: Leonid B. Sokolinsky
@@ -13,9 +13,6 @@ void PC_bsf_CopyParameter(
 ); 
 void PC_bsf_Init(
 	bool* success
-);
-void PC_bsf_MapInit(
-	PT_bsf_parameter_T parameter
 );
 void PC_bsf_IterOutput(
 	PT_bsf_reduceElem_T* reduceResult, 
@@ -51,7 +48,9 @@ void PC_bsf_JobDispatcher(
 	bool* exit,
 	double t
 );
-//
+void PC_bsf_MapInit(
+	PT_bsf_parameter_T parameter
+);
 void PC_bsf_MapF(
 	PT_bsf_mapElem_T* mapElem, 
 	PT_bsf_reduceElem_T* reduceElem, 

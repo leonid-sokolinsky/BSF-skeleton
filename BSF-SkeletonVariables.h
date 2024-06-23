@@ -1,5 +1,5 @@
 /*==============================================================================
-Project: BSF
+Project: BSF (Bulk Synchronous Farm) parallel computation model
 Theme: BSF Skeleton
 Module: BSF-SceletonVariables.h (Skeleton Variables)
 Prefix: BSF_sv

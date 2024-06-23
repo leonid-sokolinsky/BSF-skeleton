@@ -1,5 +1,5 @@
 /*==============================================================================
-Project: BSF
+Project: BSF (Bulk Synchronous Farm) parallel computation model
 Theme: BSF Skeleton
 Module: BSF-Forwards.h (Problem Independent Function Forwards)
 Author: Leonid B. Sokolinsky 

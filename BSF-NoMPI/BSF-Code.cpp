@@ -1,6 +1,6 @@
 /*==============================================================================
-Project: LiFe
-Theme: BSF Skeleton
+Project: BSF (Bulk Synchronous Farm) parallel computation model
+Theme: BSF Skeleton not MPI version
 Module: BSF-Code.cpp (Problem Independent Code)
 Prefix: BC
 Author: Leonid B. Sokolinsky

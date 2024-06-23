@@ -1,5 +1,5 @@
 /*==============================================================================
-Project: BSF
+Project: BSF (Bulk Synchronous Farm) parallel computation model
 Theme: BSF Skeleton
 Module: BSF-Data.h (Problem Independent Variables & Data Structures)
 Prefix: BD

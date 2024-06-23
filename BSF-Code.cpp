@@ -1,5 +1,5 @@
 /*==============================================================================
-Project: BSF
+Project: BSF (Bulk Synchronous Farm) parallel computation model
 Theme: BSF Skeleton
 Module: BSF-Code.cpp (Problem Independent Code)
 Prefix: BC

@@ -1,6 +1,6 @@
 /*==============================================================================
-Project: LiFe
-Theme: BSF Skeleton
+Project: BSF (Bulk Synchronous Farm) parallel computation model
+Theme: BSF Skeleton not MPI version
 Module: BSF-Data.h (Problem Independent Variables & Data Structures)
 Prefix: BD
 Author: Leonid B. Sokolinsky 

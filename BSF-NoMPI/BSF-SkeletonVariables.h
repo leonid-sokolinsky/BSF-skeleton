@@ -1,6 +1,6 @@
 /*==============================================================================
-Project: LiFe
-Theme: BSF Skeleton
+Project: BSF (Bulk Synchronous Farm) parallel computation model
+Theme: BSF Skeleton not MPI version
 Module: BSF-SceletonVariables.h (Skeleton Variables)
 Prefix: BSF_sv
 Author: Leonid B. Sokolinsky

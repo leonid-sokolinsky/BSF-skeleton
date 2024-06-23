@@ -1,6 +1,6 @@
 /*==============================================================================
-Project: LiFe
-Theme: BSF Skeleton
+Project: BSF (Bulk Synchronous Farm) parallel computation model
+Theme: BSF Skeleton not MPI version
 Module: BSF-Types.h (Problem Independent Types)
 Prefix: BT
 Author: Leonid B. Sokolinsky 
