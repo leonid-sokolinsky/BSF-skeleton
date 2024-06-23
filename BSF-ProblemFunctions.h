@@ -48,7 +48,7 @@ void PC_bsf_JobDispatcher(
 	bool* exit,
 	double t
 );
-void PC_bsf_MapInit(
+void PC_bsf_IterInit(
 	PT_bsf_parameter_T parameter
 );
 void PC_bsf_MapF(

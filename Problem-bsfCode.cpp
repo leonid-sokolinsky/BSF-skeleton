@@ -28,7 +28,7 @@ void PC_bsf_SetMapListElem(PT_bsf_mapElem_T* elem, int i) {
 
 }
 
-void PC_bsf_MapInit(PT_bsf_parameter_T parameter) {
+void PC_bsf_IterInit(PT_bsf_parameter_T parameter) {
 	// Optional filling. Do not delete!
 }
 
